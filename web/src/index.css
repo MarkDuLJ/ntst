@@ -11,3 +11,28 @@
 /**
  * END --- TAILWIND GENERATOR EDIT
  */
+
+ /* Custom css */
+ body {
+  @apply font-Poppins
+}
+
+.btn {
+  @apply shadow-md py-3 px-6 rounded-md transition duration-300 hover:bg-white hover:text-ntst-purple;
+}
+
+.btn-purple {
+  @apply bg-ntst-purple text-white;
+}
+
+.btn-white {
+  @apply bg-ntst-white;
+}
+
+.error {
+  @apply text-red-700
+}
+
+input.error, textarea.error {
+  @apply border-red-700 appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500
+}

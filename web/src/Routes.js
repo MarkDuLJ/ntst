@@ -9,6 +9,7 @@
 
 import { Set, Router, Route } from '@redwoodjs/router'
 import ProductsLayout from 'src/layouts/Admin/ProductsLayout'
+import NtstLayout from 'src/layouts/NtstLayout/NtstLayout'
 
 const Routes = () => {
   return (
@@ -19,8 +20,12 @@ const Routes = () => {
         <Route path="/admin/products/{id:Int}" page={AdminProductProductPage} name="adminProduct" />
         <Route path="/admin/products" page={AdminProductProductsPage} name="adminProducts" />
       </Set>
-      <Route path="/" page={HomePage} name="home" />
-      <Route notfound page={NotFoundPage} />
+      <Set wrap={NtstLayout}>
+        <Route path="/contact" page={ContactPage} name="contact" />
+        <Route path="/about" page={AboutPage} name="about" />
+        <Route path="/" page={HomePage} name="home" />
+        <Route notfound page={NotFoundPage} />
+      </Set>
     </Router>
   )
 }
