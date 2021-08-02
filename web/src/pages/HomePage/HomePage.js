@@ -1,4 +1,7 @@
 import React from 'react'
+import CustomButton from 'src/components/custom-button/custom-button.component'
+import ContactComponent from 'src/components/contact/contact.component'
+import NewsAndEvents from 'src/components/news-and-events/news-and-events.component'
 
 const HomePage = () => {
   return (
@@ -18,18 +21,8 @@ const HomePage = () => {
               nostrum temporibus rem veritatis? Corrupti.
             </p>
             <div className="flex justify-center flex-wrap gap-6">
-              <button
-                type="button"
-                className="btn btn-purple hover:bg-ntst-white hover:text-black"
-              >
-                Buy in store
-              </button>
-              <button
-                type="button"
-                className="btn btn-white hover:bg-ntst-purple hover:text-white"
-              >
-                Buy online
-              </button>
+              <CustomButton>Buy in store</CustomButton>
+              <CustomButton>Buy online</CustomButton>
             </div>
           </div>
 
@@ -46,8 +39,10 @@ const HomePage = () => {
         <div className="hidden md:block overflow-hidden bg-ntst-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36"></div>
       </section>
 
+      <NewsAndEvents></NewsAndEvents>
+
       {/* Products Section */}
-      <section className="bg-ntst-white py-20 mt-20 lg:mt-60">
+      <section className="bg-ntst-white py-20">
         {/* Heading  */}
         <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
           <h1 className="text-3xl text-center text-ntst-blue">Products</h1>
@@ -79,12 +74,7 @@ const HomePage = () => {
                 libero qui dolorem totam magni cumque, neque sapiente quasi
                 delectus, fugiat vero. Odio, dicta!
               </p>
-              <button
-                type="button"
-                className="btn btn-purple hover:bg-ntst-white hover:text-black"
-              >
-                More info
-              </button>
+              <CustomButton>More Info</CustomButton>
             </div>
           </div>
           {/* Rounded rectangle  */}
@@ -111,12 +101,7 @@ const HomePage = () => {
                 libero qui dolorem totam magni cumque, neque sapiente quasi
                 delectus, fugiat vero. Odio, dicta!
               </p>
-              <button
-                type="button"
-                className="btn btn-purple hover:bg-ntst-white hover:text-black"
-              >
-                More info
-              </button>
+              <CustomButton>More Info</CustomButton>
             </div>
           </div>
           {/* Rounded rectangle  */}
@@ -143,12 +128,7 @@ const HomePage = () => {
                 libero qui dolorem totam magni cumque, neque sapiente quasi
                 delectus, fugiat vero. Odio, dicta!
               </p>
-              <button
-                type="button"
-                className="btn btn-purple hover:bg-ntst-white hover:text-black"
-              >
-                More info
-              </button>
+              <CustomButton>More Info</CustomButton>
             </div>
           </div>
           {/* Rounded rectangle  */}
@@ -185,42 +165,12 @@ const HomePage = () => {
               <span className="flex-1">How to buy?</span>
               <i className="fas fa-chevron-down text-ntst-purple"></i>
             </div>
-            <button
-              type="button"
-              className="flex self-center mt-12 btn btn-purple hover:bg-ntst-white hover:text-black"
-            >
-              More info
-            </button>
+            <CustomButton>More Info</CustomButton>
           </div>
         </div>
       </section>
 
-      {/* Contact us */}
-      <section className="bg-ntst-purple text-white py-20">
-        <div className="container">
-          <div className="sm:w-3/4 lg:w-2/4 mx-auto">
-            <p className="uppercase font-light text-center mb-8">
-              +35,000 clients across Canada
-            </p>
-            <h1 className="text-3xl text-center uppercase">
-              Subscribe to our newsletter
-            </h1>
-            <div className="flex flex-col sm:flex-row gap-6 mt-8">
-              <input
-                type="text"
-                placeholder="Enter your email"
-                className="focus:outline-none rounded-md flex-1 px-2 py-3 text-black"
-              />
-              <button
-                type="button"
-                className="btn bg-ntst-red text-ntst-white rounded hover:bg-ntst-white hover:text-black"
-              >
-                Contact us
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactComponent></ContactComponent>
     </>
   )
 }
