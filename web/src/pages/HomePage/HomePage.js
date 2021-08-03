@@ -67,7 +67,7 @@ const HomePage = () => {
             </div>
             {/* Content  */}
             <div className="flex flex-1 flex-col items-center lg:items-start">
-              <h1 className="text-3xl text-ntst-blue">Lorem ipsum</h1>
+              <h1 className="text-3xl text-ntst-blue">Ventilator</h1>
               <p className="text-ntst-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Adipisci, distinctio! Nemo amet expedita quod voluptas quaerat
@@ -87,14 +87,16 @@ const HomePage = () => {
             {/* Image  */}
             <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
               <img
-                src="https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg"
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
                 className="w-5/6 h-5/6 rounded-md sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                 alt=""
               />
             </div>
             {/* Content  */}
             <div className="flex flex-1 flex-col items-center lg:items-start">
-              <h1 className="text-3xl text-ntst-blue">Lorem ipsum</h1>
+              <h1 className="text-3xl text-ntst-blue">
+                Home Medical Monitoring
+              </h1>
               <p className="text-ntst-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Adipisci, distinctio! Nemo amet expedita quod voluptas quaerat
@@ -121,7 +123,7 @@ const HomePage = () => {
             </div>
             {/* Content  */}
             <div className="flex flex-1 flex-col items-center lg:items-start">
-              <h1 className="text-3xl text-ntst-blue">Lorem ipsum</h1>
+              <h1 className="text-3xl text-ntst-blue">Health Supplements</h1>
               <p className="text-ntst-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Adipisci, distinctio! Nemo amet expedita quod voluptas quaerat
