@@ -25,6 +25,10 @@
   @apply bg-ntst-purple text-white;
 }
 
+.btn-blue {
+  @apply bg-ntst-blue text-white
+}
+
 .btn-white {
   @apply bg-ntst-white;
 }

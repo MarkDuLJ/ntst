@@ -3,7 +3,7 @@ import { Link, routes } from '@redwoodjs/router'
 
 const ContactComponent = () => {
   return (
-    <section className="bg-ntst-purple text-white py-20">
+    <section className="bg-ntst-blue text-white py-20">
       <div className="container">
         <div className="sm:w-3/4 lg:w-2/4 mx-auto">
           <p className="uppercase font-light text-center mb-8">
@@ -20,7 +20,7 @@ const ContactComponent = () => {
             />
             <Link
               to={routes.contact()}
-              className="block text-lg rounded bg-ntst-blue p-4 hover:bg-ntst-white hover:text-ntst-blue"
+              className="block text-lg rounded text-black bg-ntst-white p-4"
             >
               Contact us
             </Link>

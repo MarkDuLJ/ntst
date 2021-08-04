@@ -13,7 +13,7 @@ const NewsItem = ({ id, title, content, imageUrl }) => (
       <div className="flex p-6">
         <button
           type="button"
-          className="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black"
+          className="flex-1 btn btn-blue hover:bg-bookmark-white hover:text-black"
         >
           More Info
         </button>

@@ -36,7 +36,7 @@ const HomePage = () => {
           </div>
         </div>
         {/* Rounded rectangle */}
-        <div className="hidden md:block overflow-hidden bg-ntst-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36"></div>
+        <div className="hidden md:block overflow-hidden bg-ntst-blue rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36"></div>
       </section>
 
       <NewsAndEvents></NewsAndEvents>
@@ -60,7 +60,7 @@ const HomePage = () => {
             {/* Image  */}
             <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
               <img
-                src="https://cdn.pixabay.com/photo/2017/11/14/13/06/kitty-2948404_960_720.jpg"
+                src="https://cdn.pixabay.com/photo/2020/11/11/12/34/medical-5732384_960_720.jpg"
                 className="w-5/6 h-5/6 rounded-md sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                 alt=""
               />
@@ -78,7 +78,7 @@ const HomePage = () => {
             </div>
           </div>
           {/* Rounded rectangle  */}
-          <div className="hidden lg:block overflow-hidden bg-ntst-purple rounded-r-full absolute h-80 w-2/4 lg:-bottom-24 lg:-left-36"></div>
+          <div className="hidden lg:block overflow-hidden bg-ntst-blue rounded-r-full absolute h-80 w-2/4 lg:-bottom-24 lg:-left-36"></div>
         </div>
 
         {/* Product #2  */}
@@ -87,7 +87,7 @@ const HomePage = () => {
             {/* Image  */}
             <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
               <img
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+                src="https://cdn.pixabay.com/photo/2015/07/17/22/42/startup-849805_960_720.jpg"
                 className="w-5/6 h-5/6 rounded-md sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                 alt=""
               />
@@ -107,7 +107,7 @@ const HomePage = () => {
             </div>
           </div>
           {/* Rounded rectangle  */}
-          <div className="hidden lg:block overflow-hidden bg-ntst-purple rounded-l-full absolute h-80 w-2/4 lg:-bottom-24 lg:-right-36"></div>
+          <div className="hidden lg:block overflow-hidden bg-ntst-blue rounded-l-full absolute h-80 w-2/4 lg:-bottom-24 lg:-right-36"></div>
         </div>
 
         {/* Product #3  */}
@@ -116,7 +116,7 @@ const HomePage = () => {
             {/* Image */}
             <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
               <img
-                src="https://cdn.pixabay.com/photo/2019/05/08/21/21/cat-4189697_960_720.jpg"
+                src="https://cdn.pixabay.com/photo/2015/08/02/14/27/vitamin-b-871135_960_720.jpg"
                 className="w-5/6 h-5/6 rounded-md sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                 alt=""
               />
@@ -134,7 +134,7 @@ const HomePage = () => {
             </div>
           </div>
           {/* Rounded rectangle  */}
-          <div className="hidden lg:block overflow-hidden bg-ntst-purple rounded-r-full absolute h-80 w-2/4 lg:-bottom-24 lg:-left-36"></div>
+          <div className="hidden lg:block overflow-hidden bg-ntst-blue rounded-r-full absolute h-80 w-2/4 lg:-bottom-24 lg:-left-36"></div>
         </div>
       </section>
 

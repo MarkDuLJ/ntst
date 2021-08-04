@@ -4,53 +4,64 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className="flex items-center justify-between flex-wrap bg-ntst-blue p-6">
-          <div className="flex items-center  flex-shrink-0 text-white mr-6">
+        <nav className="flex items-center justify-between flex-wrap bg-ntst-white p-6">
+          <div className="flex items-center flex-shrink-0 text-ntst-blue">
             <Link
               to={routes.home()}
-              className="block mt-5 text-2xl sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4"
+              className="block mt-5 text-3xl font-bold sm:inline-block sm:mt-0 text-ntst-blue hover:text-ntst-purple"
             >
               NTST
             </Link>
           </div>
-          <div className="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
-            <div className="uppercase text-sm sm:flex-grow">
-              <Link
-                to={routes.products()}
-                className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4"
-              >
-                Products
-              </Link>
-              <Link
-                to={routes.about()}
-                className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4"
-              >
-                About
-              </Link>
-              <button className="uppercase block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4">
-                Knowledge
-              </button>
-              {/* <Link
-            to={routes.shop()}
-            className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4"
-          >
-            Shop
-          </Link> */}
-              <Link
-                to={routes.contact()}
-                className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4"
-              >
-                Contact
-              </Link>
+
+          <div className="flex flex-col uppercase text-sm items-center md:flex-row md:justify-center md:flex-grow md:">
+            <Link
+              to={routes.products()}
+              className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-blue hover:text-ntst-purple mr-5"
+            >
+              Products
+            </Link>
+
+            <Link
+              to={routes.about()}
+              className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-blue hover:text-ntst-purple mr-5"
+            >
+              About
+            </Link>
+
+            <div className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-blue hover:text-ntst-purple mr-5 cursor-pointer">
+              Knowledge
             </div>
+
+            <div className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-blue hover:text-ntst-purple mr-5 cursor-pointer">
+              Shop
+            </div>
+
+            {/* <Link
+                to={routes.shop()}
+                className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-5"
+              >
+                Shop
+              </Link> */}
+
+            <Link
+              to={routes.contact()}
+              className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-blue hover:text-ntst-purple mr-5"
+            >
+              Contact
+            </Link>
+          </div>
+
+          <div className="flex flex-col md:flex-row md:justify-end">
             {/* Shopping cart */}
             <button href="#" className="block cursor-pointer px-4 py-2">
-              <i className="text-xl text-ntst-white hover:text-ntst-purple fas fa-shopping-cart"></i>
+              <i className="text-xl text-ntst-blue hover:text-ntst-purple fas fa-shopping-cart"></i>
             </button>
+
             {/* Login */}
             <button
               href="#"
-              className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0"
+              className="inline-block text-sm px-4 py-2 leading-none border rounded text-ntst-blue border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0"
             >
               Login
             </button>
