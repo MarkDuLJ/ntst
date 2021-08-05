@@ -17,11 +17,54 @@ model UserExample {
   name  String?
 }
 
+model Category {
+  category_id   Int       @id @default(autoincrement())
+  category_name String    @unique
+  notes         String
+  products      Product[]
+}
+
 model Product {
-  id    Int     @id @default(autoincrement())
-  type String  @unique
-  name  String
-  description String
-  price Decimal
-  tag String[]
+  id            Int           @id @default(autoincrement())
+  //type String  @unique what is type here? and why it is unique?
+  name          String
+  description   String
+  price         Decimal
+  tag           String[]
+  cat           Category      @relation(fields: [cat_id], references: [category_id])
+  cat_id        Int
+  order_details Orderdetail[]
+}
+
+model CustomerID {
+  customer_id Int     @id @default(autoincrement())
+  first_name  String  @db.VarChar(10)
+  last_name   String  @db.VarChar(20)
+  Phone       String  @unique @db.VarChar(10)
+  Email       String  @unique @db.VarChar(25)
+  PostalCode  String  @db.VarChar(6)
+  orders      Order[]
+}
+
+model Order {
+  order_id   Int          @id @default(autoincrement())
+  order_date DateTime     @default(now())
+  customers  CustomerID   @relation(fields: [cus_id], references: [customer_id])
+  cus_id     Int
+  orderd     Orderdetail?
+}
+
+model Orderdetail {
+  orderitem_id Int     @id @default(autoincrement())
+  products     Product @relation(fields: [prod_id], references: [id])
+  prod_id      Int
+  order        Order   @relation(fields: [oid], references: [order_id])
+  oid          Int
+  quantity     Int
+}
+
+model Document {
+  doc_id    Int    @id @default(autoincrement())
+  doc_title String @db.VarChar(50)
+  text      String @db.VarChar(300)
 }

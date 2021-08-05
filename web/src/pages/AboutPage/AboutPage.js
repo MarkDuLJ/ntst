@@ -1,5 +1,7 @@
 //import { Link, routes } from '@redwoodjs/router'
 
+import DocumentCellCell from 'src/components/DocumentCellCell'
+
 const AboutPage = () => {
   return (
     <div>
@@ -8,7 +10,7 @@ const AboutPage = () => {
         {/* Heading */}
         <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
           <h1 className="text-3xl text-center text-bookmark-blue">
-            Lorem ipsum dolor sit
+            <DocumentCellCell />
           </h1>
           <p className="text-center text-bookmark-grey mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero
