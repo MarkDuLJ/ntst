@@ -13,6 +13,7 @@
     ]
   },
   "dependencies": {
+    "3d-react-carousal": "^4.0.2",
     "@redwoodjs/forms": "0.35.2",
     "@redwoodjs/router": "0.35.2",
     "@redwoodjs/web": "0.35.2",

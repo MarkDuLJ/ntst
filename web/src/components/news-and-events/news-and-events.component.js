@@ -13,7 +13,7 @@ class NewsAndEvents extends React.Component {
   render() {
     const { news } = this.state
     return (
-      <section className="py-20 mt-40 bg-gray-100">
+      <section className="py-20 mt-5 bg-gray-100">
         <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
           <h1 className="text-3xl text-center text-bookmark-blue">
             News and Events
