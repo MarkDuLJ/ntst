@@ -10,6 +10,7 @@
 import { Set, Router, Route } from '@redwoodjs/router'
 import ProductsLayout from 'src/layouts/Admin/ProductsLayout'
 import NtstLayout from 'src/layouts/NtstLayout/NtstLayout'
+import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component'
 
 const Routes = () => {
   return (
@@ -21,6 +22,7 @@ const Routes = () => {
         <Route path="/admin/products" page={AdminProductProductsPage} name="adminProducts" />
       </Set>
       <Set wrap={NtstLayout}>
+        <Route path="/signin" page={SignInAndSignUp} name="signInAndSignUp"></Route>
         <Route path="/products" page={ProductsPage} name="products" />
         <Route path="/contact" page={ContactPage} name="contact" />
         <Route path="/about" page={AboutPage} name="about" />

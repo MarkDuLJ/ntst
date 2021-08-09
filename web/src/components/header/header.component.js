@@ -59,12 +59,12 @@ const Header = () => {
             </button>
 
             {/* Login */}
-            <button
-              href="#"
-              className="inline-block text-sm px-4 py-2 leading-none border rounded text-ntst-blue border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0"
+            <Link
+              to={routes.signInAndSignUp()}
+              className="inline-block text-sm px-4 py-4 leading-none border rounded text-ntst-blue border-black hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0"
             >
-              Login
-            </button>
+              Sign In
+            </Link>
           </div>
         </nav>
       </header>
