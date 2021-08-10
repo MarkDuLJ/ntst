@@ -4,8 +4,9 @@ export const schema = gql`
     type: String!
     name: String!
     description: String!
+    imgUrl: String
     price: Float!
-    tag: [String]!
+    tag: String!
   }
 
   type Query {
@@ -17,16 +18,18 @@ export const schema = gql`
     type: String!
     name: String!
     description: String!
+    imgUrl: String
     price: Float!
-    tag: [String]!
+    tag: String!
   }
 
   input UpdateProductInput {
     type: String
     name: String
     description: String
+    imgUrl: String
     price: Float
-    tag: [String]!
+    tag: String
   }
 
   type Mutation {

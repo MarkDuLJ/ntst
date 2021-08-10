@@ -17,6 +17,18 @@ const BlogLayout = ({ children }) => {
                 Home
               </Link>
               <Link
+                to={routes.product()}
+                className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4"
+              >
+                Product
+              </Link>
+              <Link
+                to={routes.article()}
+                className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4"
+              >
+                Article
+              </Link>
+              <Link
                 to={routes.about()}
                 className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4"
               >
@@ -25,12 +37,7 @@ const BlogLayout = ({ children }) => {
               <button className="uppercase block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4">
                 Shop
               </button>
-              {/* <Link
-                to={routes.shop()}
-                className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4"
-              >
-                Shop
-              </Link> */}
+
               <Link
                 to={routes.contact()}
                 className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-white hover:text-ntst-purple mr-4"

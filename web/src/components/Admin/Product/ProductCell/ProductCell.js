@@ -7,6 +7,7 @@ export const QUERY = gql`
       type
       name
       description
+      imgUrl
       price
       tag
     }

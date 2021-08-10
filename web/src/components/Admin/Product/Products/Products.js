@@ -65,6 +65,7 @@ const ProductsList = ({ products }) => {
             <th>Type</th>
             <th>Name</th>
             <th>Description</th>
+            <th>Img url</th>
             <th>Price</th>
             <th>Tag</th>
             <th>&nbsp;</th>
@@ -77,6 +78,7 @@ const ProductsList = ({ products }) => {
               <td>{truncate(product.type)}</td>
               <td>{truncate(product.name)}</td>
               <td>{truncate(product.description)}</td>
+              <td>{truncate(product.imgUrl)}</td>
               <td>{truncate(product.price)}</td>
               <td>{truncate(product.tag)}</td>
               <td>

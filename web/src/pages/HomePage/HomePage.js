@@ -1,8 +1,9 @@
-import React from 'react'
+import CompanyEventsCell from 'src/components/CompanyEventsCell'
 
 const HomePage = () => {
   return (
     <>
+    <CompanyEventsCell />
       {/* Hero section */}
       <section className="relative font-Poppins">
         <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">

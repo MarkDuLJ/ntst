@@ -1,18 +1,18 @@
 export const standard = defineScenario({
   product: {
     one: {
-      type: 'String3232944',
+      type: 'String8589811',
       name: 'String',
       description: 'String',
-      price: 5497656.626670129,
+      price: 3511277.3283947865,
       tag: 'String',
     },
 
     two: {
-      type: 'String4328479',
+      type: 'String227410',
       name: 'String',
       description: 'String',
-      price: 4659654.078277049,
+      price: 8593492.946702624,
       tag: 'String',
     },
   },

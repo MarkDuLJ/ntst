@@ -11,6 +11,7 @@ export const QUERY = gql`
       type
       name
       description
+      imgUrl
       price
       tag
     }
@@ -23,6 +24,7 @@ const UPDATE_PRODUCT_MUTATION = gql`
       type
       name
       description
+      imgUrl
       price
       tag
     }

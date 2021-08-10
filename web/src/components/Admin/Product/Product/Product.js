@@ -71,6 +71,10 @@ const Product = ({ product }) => {
               <td>{product.description}</td>
             </tr>
             <tr>
+              <th>Img url</th>
+              <td>{product.imgUrl}</td>
+            </tr>
+            <tr>
               <th>Price</th>
               <td>{product.price}</td>
             </tr>

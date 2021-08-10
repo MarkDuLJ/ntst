@@ -4,6 +4,7 @@ import {
   FieldError,
   Label,
   TextField,
+  NumberField,
   Submit,
 } from '@redwoodjs/forms'
 
@@ -80,13 +81,30 @@ const ProductForm = (props) => {
         <FieldError name="description" className="rw-field-error" />
 
         <Label
+          name="imgUrl"
+          className="rw-label"
+          errorClassName="rw-label rw-label-error"
+        >
+          Img url
+        </Label>
+        <TextField
+          name="imgUrl"
+          defaultValue={props.product?.imgUrl}
+          className="rw-input"
+          errorClassName="rw-input rw-input-error"
+          validation={{ required: true }}
+        />
+
+        <FieldError name="imgUrl" className="rw-field-error" />
+
+        <Label
           name="price"
           className="rw-label"
           errorClassName="rw-label rw-label-error"
         >
           Price
         </Label>
-        <TextField
+        <NumberField
           name="price"
           defaultValue={props.product?.price}
           className="rw-input"

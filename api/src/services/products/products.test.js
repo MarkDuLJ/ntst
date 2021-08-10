@@ -22,18 +22,18 @@ describe('products', () => {
   scenario('creates a product', async () => {
     const result = await createProduct({
       input: {
-        type: 'String5299799',
+        type: 'String4785310',
         name: 'String',
         description: 'String',
-        price: 2381682.5945678754,
+        price: 6079682.220319087,
         tag: 'String',
       },
     })
 
-    expect(result.type).toEqual('String5299799')
+    expect(result.type).toEqual('String4785310')
     expect(result.name).toEqual('String')
     expect(result.description).toEqual('String')
-    expect(result.price).toEqual(2381682.5945678754)
+    expect(result.price).toEqual(6079682.220319087)
     expect(result.tag).toEqual('String')
   })
 
@@ -41,10 +41,10 @@ describe('products', () => {
     const original = await product({ id: scenario.product.one.id })
     const result = await updateProduct({
       id: original.id,
-      input: { type: 'String93238612' },
+      input: { type: 'String17160442' },
     })
 
-    expect(result.type).toEqual('String93238612')
+    expect(result.type).toEqual('String17160442')
   })
 
   scenario('deletes a product', async (scenario) => {

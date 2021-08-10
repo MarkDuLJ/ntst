@@ -22,6 +22,31 @@ model Product {
   type String  @unique
   name  String
   description String
+  imgUrl String?
   price Decimal
-  tag String[]
+  tag String
 }
+
+model Event {
+  id    Int     @id @default(autoincrement())
+  title String  @unique
+  description String
+  imgUrl String
+  createAt DateTime @default(now())
+}
+
+model Article {
+  id    Int     @id @default(autoincrement())
+  title String  @unique
+  description String
+  createAt DateTime @default(now())
+}
+
+model RW_DataMigration {
+  version    String   @id
+  name       String
+  startedAt  DateTime
+  finishedAt DateTime
+}
+
+
