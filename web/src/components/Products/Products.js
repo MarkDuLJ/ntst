@@ -1,9 +1,11 @@
 import Product from 'src/components/product'
 
-const Products = ({products}) => {
+const Products = ({ products }) => {
   return (
     <>
-      {products.map(product=><Product product={product} />)}
+      {products.map((product) => (
+        <Product product={product} key={product.id} />
+      ))}
     </>
   )
 }

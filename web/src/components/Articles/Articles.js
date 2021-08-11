@@ -1,8 +1,10 @@
 import Article from 'src/components/Article'
-const Articles = ({articles}) => {
+const Articles = ({ articles }) => {
   return (
     <>
-      {articles.map(article=><Article article={article} />)}
+      {articles.map((article) => (
+        <Article article={article} key={article.id} />
+      ))}
     </>
   )
 }
