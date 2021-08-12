@@ -3,7 +3,11 @@ import CompanyEventsCell from 'src/components/CompanyEventsCell'
 const HomePage = () => {
   return (
     <>
-    <CompanyEventsCell />
+      {/* News and Events section */}
+      <h2 className="container mt-6 mb-6 text-3xl text-ntst-blue">
+        News and Events
+      </h2>
+      <CompanyEventsCell />
       {/* Hero section */}
       <section className="relative font-Poppins">
         <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
@@ -38,7 +42,7 @@ const HomePage = () => {
           <div className="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
             <img
               className="w-5/6 h-5/6 rounded-md sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
-              src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_960_720.jpg"
+              src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
               alt=""
             />
           </div>
@@ -66,7 +70,7 @@ const HomePage = () => {
             {/* Image  */}
             <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
               <img
-                src="https://cdn.pixabay.com/photo/2017/11/14/13/06/kitty-2948404_960_720.jpg"
+                src="https://images.unsplash.com/photo-1616391182219-e080b4d1043a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80"
                 className="w-5/6 h-5/6 rounded-md sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                 alt=""
               />
@@ -98,7 +102,7 @@ const HomePage = () => {
             {/* Image  */}
             <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
               <img
-                src="https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg"
+                src="https://images.unsplash.com/photo-1615486511262-c7b5c7f42b14?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"
                 className="w-5/6 h-5/6 rounded-md sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                 alt=""
               />
@@ -130,7 +134,7 @@ const HomePage = () => {
             {/* Image */}
             <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
               <img
-                src="https://cdn.pixabay.com/photo/2019/05/08/21/21/cat-4189697_960_720.jpg"
+                src="https://images.unsplash.com/photo-1513224502586-d1e602410265?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"
                 className="w-5/6 h-5/6 rounded-md sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                 alt=""
               />

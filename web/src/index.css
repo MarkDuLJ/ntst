@@ -12,6 +12,9 @@
  * END --- TAILWIND GENERATOR EDIT
  */
 
+ /* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,500;1,600&display=swap');
+
  /* Custom css */
  body {
   @apply font-Poppins
@@ -35,4 +38,28 @@
 
 input.error, textarea.error {
   @apply border-red-700 appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500
+}
+
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #edf2f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #003d99;
 }

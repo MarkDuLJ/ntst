@@ -1,8 +1,12 @@
 import Article from 'src/components/Article'
-const Articles = ({articles}) => {
+const Articles = ({ articles }) => {
   return (
     <>
-      {articles.map(article=><Article article={article} />)}
+      <div className="container p-3">
+        {articles.map((article) => (
+          <Article article={article} />
+        ))}
+      </div>
     </>
   )
 }
