@@ -36,6 +36,7 @@ const BlogLayout = ({ children }) => {
             </Link>
             <button className="uppercase block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-ntst-blue hover:text-ntst-purple mr-4">
               Shop
+
             </button>
 
             <Link
