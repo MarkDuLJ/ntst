@@ -3,8 +3,10 @@ import { Cart } from 'src/components/Cart'
 const CartPage = () => {
   return (
     <>
-      <h1>CartPage</h1>
-      <Cart />
+      <div className="container">
+        <h1 className="text-ntst-blue text-2xl my-10 font-bold">Check out</h1>
+        <Cart />
+      </div>
     </>
   )
 }
