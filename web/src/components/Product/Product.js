@@ -30,7 +30,11 @@ const Product = ({ product }) => {
           <p>#{tag}</p>
         </div>
 
-        <button disabled={carting} onClick={() => onClick()}>
+        <button
+          className="bg-ntst-purple text-ntst-white font-semibold p-3 rounded-md hover:bg-ntst-white hover:text-ntst-blue"
+          disabled={carting}
+          onClick={() => onClick()}
+        >
           Add To Cart
         </button>
       </div>

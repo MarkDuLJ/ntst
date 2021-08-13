@@ -36,7 +36,6 @@ const BlogLayout = ({ children }) => {
             </Link>
             <button className="uppercase block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-ntst-blue hover:text-ntst-purple mr-4">
               Shop
-
             </button>
 
             <Link
@@ -55,7 +54,7 @@ const BlogLayout = ({ children }) => {
               className="block cursor-pointer px-4 py-2"
             >
               <i className="text-xl text-ntst-ntst-blue hover:text-ntst-purple fas fa-shopping-cart"></i>
-              <span style={{ backgroundColor: 'GrayText' }}>
+              <span className="bg-gray-100 text-ntst-blue font-semibold ml-1">
                 {cart.cartItems.length > 0
                   ? cart.cartItems.reduce((a, c) => a + c.qty, 0)
                   : null}
