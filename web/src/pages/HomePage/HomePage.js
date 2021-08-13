@@ -1,3 +1,4 @@
+import { Link, routes } from '@redwoodjs/router'
 import CompanyEventsCell from 'src/components/CompanyEventsCell'
 
 const HomePage = () => {
@@ -29,12 +30,12 @@ const HomePage = () => {
               >
                 Buy in store
               </button>
-              <button
-                type="button"
+              <Link
                 className="btn btn-white hover:bg-ntst-purple hover:text-white"
+                to={routes.product()}
               >
-                Buy online
-              </button>
+                Buy Online
+              </Link>
             </div>
           </div>
 
