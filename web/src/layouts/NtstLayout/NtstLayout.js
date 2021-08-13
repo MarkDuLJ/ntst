@@ -1,6 +1,7 @@
 import { Link, routes } from '@redwoodjs/router'
-
+import { useCart } from 'src/components/Cart'
 const BlogLayout = ({ children }) => {
+  const { cart } = useCart()
   return (
     <>
       <header>
@@ -35,6 +36,7 @@ const BlogLayout = ({ children }) => {
             </Link>
             <button className="uppercase block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-ntst-blue hover:text-ntst-purple mr-4">
               Shop
+
             </button>
 
             <Link
@@ -46,9 +48,19 @@ const BlogLayout = ({ children }) => {
           </div>
           <div className="flex flex-col md:flex-row md:justify-end">
             {/* Shopping cart */}
-            <button href="#" className="block cursor-pointer px-4 py-2">
+
+            <Link
+              to={routes.cart()}
+              href="#"
+              className="block cursor-pointer px-4 py-2"
+            >
               <i className="text-xl text-ntst-ntst-blue hover:text-ntst-purple fas fa-shopping-cart"></i>
-            </button>
+              <span style={{ backgroundColor: 'GrayText' }}>
+                {cart.cartItems.length > 0
+                  ? cart.cartItems.reduce((a, c) => a + c.qty, 0)
+                  : null}
+              </span>
+            </Link>
             {/* Login */}
             <button
               href="#"

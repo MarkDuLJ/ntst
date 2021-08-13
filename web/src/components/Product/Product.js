@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useCart } from 'src/components/Cart'
-import { currency } from 'src/utils/index'
 
 const Product = ({ product }) => {
   const { name, description, imgUrl, price, tag } = product
