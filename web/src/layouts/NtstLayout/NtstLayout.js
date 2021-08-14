@@ -9,7 +9,7 @@ const BlogLayout = ({ children }) => {
           <div className="flex items-center flex-shrink-0 text-ntst-blue">
             <Link
               to={routes.home()}
-              className="block mt-5 text-3xl font-bold sm:inline-block sm:mt-0 text-ntst-blue hover:text-ntst-purple"
+              className="block mt-5 text-6xl font-semibold sm:inline-block sm:mt-0 text-ntst-blue hover:text-ntst-purple"
             >
               NTST
             </Link>
@@ -34,9 +34,6 @@ const BlogLayout = ({ children }) => {
             >
               About
             </Link>
-            <button className="uppercase block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-ntst-blue hover:text-ntst-purple mr-4">
-              Shop
-            </button>
 
             <Link
               to={routes.contact()}
@@ -63,7 +60,7 @@ const BlogLayout = ({ children }) => {
             {/* Login */}
             <button
               href="#"
-              className="inline-block text-sm px-4 py-2 leading-none border rounded text-ntst-blue border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0"
+              className="inline-block text-sm px-4 py-2 font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0"
             >
               Login
             </button>

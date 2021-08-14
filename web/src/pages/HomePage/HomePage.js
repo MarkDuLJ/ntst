@@ -4,24 +4,19 @@ import CompanyEventsCell from 'src/components/CompanyEventsCell'
 const HomePage = () => {
   return (
     <>
-      {/* News and Events section */}
-      <h2 className="container mt-6 mb-6 text-3xl text-ntst-blue">
-        News and Events
-      </h2>
-      <CompanyEventsCell />
       {/* Hero section */}
       <section className="relative font-Poppins">
         <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
           {/* Content  */}
           <div className="flex flex-1 flex-col items-center lg:items-start">
-            <h2 className="text-ntst-blue text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mb-6">
-              Ventilator supplier
-            </h2>
+            <h1 className="text-ntst-blue text-4xl md:text-4xl lg:text-6xl text-center lg:text-left mb-6">
+              NTST-Tech
+            </h1>
             <p className="text-ntst-grey text-lg text-center lg:text-left mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              aliquam quaerat doloribus delectus ut eius optio eveniet illum
-              soluta nemo perferendis totam, voluptatibus atque consequuntur
-              nostrum temporibus rem veritatis? Corrupti.
+              NTST-Tech Development Ltd is a medical equipment company located
+              in Scarborough, Ontario. It focuses on remote patient monitoring
+              with the use of its invasive ventilator and non-invasive
+              ventilator for business and home uses.
             </p>
             <div className="flex justify-center flex-wrap gap-6">
               <button
@@ -52,16 +47,22 @@ const HomePage = () => {
         <div className="hidden md:block overflow-hidden bg-ntst-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36"></div>
       </section>
 
+      {/* News and Events section */}
+      <section className="pt-20 pb-10 mt-20 lg:mt-60">
+        <h2 className="container text-4xl text-ntst-blue mb-6 text-center">
+          News and Events
+        </h2>
+        <CompanyEventsCell />
+      </section>
+
       {/* Products Section */}
-      <section className="bg-ntst-white py-20 mt-20 lg:mt-60">
+      <section className="bg-ntst-white py-20 mt-20 lg:mt-30">
         {/* Heading  */}
         <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-          <h1 className="text-3xl text-center text-ntst-blue">Products</h1>
+          <h1 className="text-4xl text-center text-ntst-blue">Products</h1>
           <p className="text-center text-ntst-grey mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero
-            rerum repellendus eum, omnis commodi quod temporibus laboriosam nam
-            labore vitae magnam beatae earum dignissimos magni saepe iste
-            aperiam ex?
+            NTST have 3 types of products available: ventilator, health data
+            monitoring system, and dietary supplements
           </p>
         </div>
 
@@ -78,12 +79,10 @@ const HomePage = () => {
             </div>
             {/* Content  */}
             <div className="flex flex-1 flex-col items-center lg:items-start">
-              <h1 className="text-3xl text-ntst-blue">Lorem ipsum</h1>
+              <h1 className="text-3xl text-ntst-blue">Ventilator</h1>
               <p className="text-ntst-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci, distinctio! Nemo amet expedita quod voluptas quaerat
-                libero qui dolorem totam magni cumque, neque sapiente quasi
-                delectus, fugiat vero. Odio, dicta!
+                There are invasive and non-invasive ventilator for business and
+                home uses in NTST.
               </p>
               <button
                 type="button"
@@ -110,12 +109,12 @@ const HomePage = () => {
             </div>
             {/* Content  */}
             <div className="flex flex-1 flex-col items-center lg:items-start">
-              <h1 className="text-3xl text-ntst-blue">Lorem ipsum</h1>
+              <h1 className="text-3xl text-ntst-blue">
+                Home Data Monitoring Systems
+              </h1>
               <p className="text-ntst-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci, distinctio! Nemo amet expedita quod voluptas quaerat
-                libero qui dolorem totam magni cumque, neque sapiente quasi
-                delectus, fugiat vero. Odio, dicta!
+                NTST’s health data monitoring system would monitor patients’
+                health data through wearable wireless device.
               </p>
               <button
                 type="button"
@@ -135,19 +134,17 @@ const HomePage = () => {
             {/* Image */}
             <div className="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
               <img
-                src="https://images.unsplash.com/photo-1513224502586-d1e602410265?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"
+                src="https://images.unsplash.com/photo-1559087316-6b27308e53f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=985&q=80"
                 className="w-5/6 h-5/6 rounded-md sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
                 alt=""
               />
             </div>
             {/* Content  */}
             <div className="flex flex-1 flex-col items-center lg:items-start">
-              <h1 className="text-3xl text-ntst-blue">Lorem ipsum</h1>
+              <h1 className="text-3xl text-ntst-blue">Dietary Supplements</h1>
               <p className="text-ntst-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci, distinctio! Nemo amet expedita quod voluptas quaerat
-                libero qui dolorem totam magni cumque, neque sapiente quasi
-                delectus, fugiat vero. Odio, dicta!
+                The dietary supplements offer vitamins, minerals, proteins, etc.
+                that people’s body may need.
               </p>
               <button
                 type="button"
