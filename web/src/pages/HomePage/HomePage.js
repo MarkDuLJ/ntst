@@ -6,7 +6,7 @@ const HomePage = () => {
     <>
       {/* Hero section */}
       <section className="relative font-Poppins">
-        <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+        <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-52">
           {/* Content  */}
           <div className="flex flex-1 flex-col items-center lg:items-start">
             <h1 className="text-ntst-blue text-4xl md:text-4xl lg:text-6xl text-center lg:text-left mb-6">
@@ -110,7 +110,7 @@ const HomePage = () => {
             {/* Content  */}
             <div className="flex flex-1 flex-col items-center lg:items-start">
               <h1 className="text-3xl text-ntst-blue">
-                Home Data Monitoring Systems
+                Health Data Monitoring Systems
               </h1>
               <p className="text-ntst-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
                 NTST’s health data monitoring system would monitor patients’

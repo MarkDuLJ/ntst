@@ -98,9 +98,9 @@ const ContactPage = () => {
           </Form>
 
           <div className="mb-10">
-            <h5>Company Phone #: 888-888-8888</h5>
+            <h5>NTST Phone #: 888-888-8888</h5>
             <h5>
-              Company email:{' '}
+              NTST email:{' '}
               <a
                 href="mailto:ntst@gmail.com"
                 className="text-ntst-blue font-semibold"
@@ -108,7 +108,7 @@ const ContactPage = () => {
                 ntst@gmail.com
               </a>
             </h5>
-            <h5>Company addres: 273 River Road St.</h5>
+            <h5>NTST address: 273 River Road St.</h5>
           </div>
         </div>
       </div>

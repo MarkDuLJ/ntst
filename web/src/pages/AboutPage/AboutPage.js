@@ -4,7 +4,7 @@ const AboutPage = () => {
   return (
     <div>
       {/* Cards */}
-      <section className="container py-20 mt-20">
+      <section className="container py-10 mt-10">
         {/* Heading */}
         <div className="sm:w-3/4 lg:w-3/4 mx-auto px-2">
           <h1 className="text-3xl text-center text-bookmark-blue">
@@ -21,6 +21,9 @@ const AboutPage = () => {
             services into prevention of COVID-19 mainly by providing breath and
             sleep quality monitoring services using its ventilators.
           </p>
+          <h1 className="text-3xl text-center text-bookmark-blue mt-16 mb-0">
+            Leadership
+          </h1>
         </div>
 
         {/* Cards  */}

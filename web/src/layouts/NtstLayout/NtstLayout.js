@@ -15,7 +15,7 @@ const BlogLayout = ({ children }) => {
             </Link>
           </div>
 
-          <div className="flex flex-col uppercase text-sm items-center md:flex-row md:justify-center md:flex-grow md:">
+          <div className="flex flex-col uppercase text-sm items-center md:flex-row md:justify-around md:w-2/5">
             <Link
               to={routes.product()}
               className="block mt-5 text-lg sm:inline-block sm:mt-0 text-ntst-ntst-blue hover:text-ntst-purple mr-4"
