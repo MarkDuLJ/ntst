@@ -4,18 +4,26 @@ const AboutPage = () => {
   return (
     <div>
       {/* Cards */}
-      <section className="container py-20 mt-20">
+      <section className="container py-10 mt-10">
         {/* Heading */}
-        <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <div className="sm:w-3/4 lg:w-3/4 mx-auto px-2">
           <h1 className="text-3xl text-center text-bookmark-blue">
-            Lorem ipsum dolor sit
+            About NTST-Tech
           </h1>
           <p className="text-center text-bookmark-grey mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero
-            rerum repellendus eum, omnis commodi quod temporibus laboriosam nam
-            labore vitae magnam beatae earum dignissimos magni saepe iste
-            aperiam ex?
+            NTST-Tech Development Ltd is a medical equipment company located in
+            Scarborough, Ontario. It focuses on remote patient monitoring with
+            the use of its invasive ventilator and non-invasive ventilator for
+            business and home uses.
           </p>
+          <p className="text-center text-bookmark-grey mt-4">
+            Since the outbreak of COVID-19, the company is expanding its
+            services into prevention of COVID-19 mainly by providing breath and
+            sleep quality monitoring services using its ventilators.
+          </p>
+          <h1 className="text-3xl text-center text-bookmark-blue mt-16 mb-0">
+            Leadership
+          </h1>
         </div>
 
         {/* Cards  */}
