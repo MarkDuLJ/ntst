@@ -20,12 +20,24 @@ const Product = ({ product }) => {
   return (
     <div className="flex flex-col rounded-md shadow-md lg:mb-16">
       <div className="p-6 flex flex-col items-center">
+
         <h2 className="mb-4">{name}</h2>
 
         <img src={imgUrl} alt={tag} className="w-full h-28 object-cover" />
         {/* <p>{description}</p> */}
 
         <p className="text-center my-4">${price}</p>
+
+        <h2>{name}</h2>
+
+        <img src={imgUrl} alt={tag} className="w-full" />
+        <p>{description}</p>
+
+        <div className="w-full p-3 flex flex-row justify-between items-stretch">
+          <p>${price}</p>
+          <p>#{tag}</p>
+        </div>
+
 
         <button
           className="bg-ntst-purple text-ntst-white font-semibold p-3 rounded-md hover:bg-ntst-white hover:text-ntst-blue"
