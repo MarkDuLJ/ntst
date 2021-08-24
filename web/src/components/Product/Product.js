@@ -20,7 +20,7 @@ const Product = ({ product }) => {
   return (
     <div className="flex flex-col rounded-md shadow-md lg:mb-16">
       <div className="p-6 flex flex-col items-center">
-        <h2 className="mb-4">{name}</h2>
+        <h2 className="mb-4 font-semibold text-xl">{name}</h2>
 
         <img src={imgUrl} alt={tag} className="w-full h-28 object-cover" />
         {/* <p>{description}</p> */}
