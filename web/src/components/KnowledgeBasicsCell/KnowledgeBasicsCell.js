@@ -4,8 +4,11 @@ export const QUERY = gql`
     articles {
       id
       title
-    description
-    createAt
+      author
+
+      tag
+      description
+      createAt
     }
   }
 `

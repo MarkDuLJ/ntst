@@ -3,6 +3,8 @@ export const schema = gql`
     id: Int!
     title: String!
     description: String!
+    author: String!
+    tag: String!
     createAt: DateTime!
   }
 
@@ -14,12 +16,16 @@ export const schema = gql`
   input CreateArticleInput {
     title: String!
     description: String!
+    author: String!
+    tag: String!
     createAt: DateTime!
   }
 
   input UpdateArticleInput {
     title: String
     description: String
+    author: String
+    tag: String
     createAt: DateTime
   }
 
