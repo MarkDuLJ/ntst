@@ -1,10 +1,23 @@
+import { Link, routes } from '@redwoodjs/router'
+
 import { useState, useEffect } from 'react'
 import { useCart } from 'src/components/Cart'
+
+const MAX_STRING_LENGTH = 20
+
+const truncate = (text) => {
+  let output = text
+  if (text.length > MAX_STRING_LENGTH) {
+    output = output.substring(0, MAX_STRING_LENGTH) + '...'
+  }
+  return output
+}
 
 const Product = ({ product }) => {
   const { name, description, imgUrl, price, tag } = product
   const { addItem } = useCart()
   const [carting, setCarting] = useState(false)
+  const [extenddesc, setExtenddesc] = useState(false)
 
   let timer
 
@@ -21,21 +34,24 @@ const Product = ({ product }) => {
     <div className="flex flex-col rounded-md shadow-md lg:mb-16">
       <div className="p-6 flex flex-col items-center">
 
-        <h2 className="mb-4">{name}</h2>
+      <Link to={routes.productdetail({id:product.id})}>
+        <h2 className="mb-4">
+          {name}
+        </h2>
 
         <img src={imgUrl} alt={tag} className="w-full h-28 object-cover" />
-        {/* <p>{description}</p> */}
-
+</Link>
         <p className="text-center my-4">${price}</p>
 
-        <h2>{name}</h2>
 
-        <img src={imgUrl} alt={tag} className="w-full" />
-        <p>{description}</p>
+        <button onClick={()=>setExtenddesc(!extenddesc)}>
+        {extenddesc?description:truncate(description)}
+        </button>
 
         <div className="w-full p-3 flex flex-row justify-between items-stretch">
-          <p>${price}</p>
-          <p>#{tag}</p>
+          <div>
+            {tag && tag.split(/,\s*/).map((tag, i) => <p key={i}>#{tag}</p>)}
+          </div>
         </div>
 
 

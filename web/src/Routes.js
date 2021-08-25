@@ -35,6 +35,7 @@ const Routes = () => {
         <Route path="/admin/articles" page={AdminArticleArticlesPage} name="adminArticles" />
       </Set>
       <Set wrap={NtstLayout}>
+      <Route path="/productdetail/{id:Int}" page={ProductdetailPage} name="productdetail" />
         <Route path="/article" page={ArticlePage} name="article" />
         <Route path="/product" page={ProductPage} name="product" />
         <Route path="/cart" page={CartPage} name="cart" />
