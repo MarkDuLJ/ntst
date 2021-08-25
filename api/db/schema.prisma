@@ -19,7 +19,7 @@ model UserExample {
 
 model Product {
   id    Int     @id @default(autoincrement())
-  type String  @unique
+  type String
   name  String
   description String
   imgUrl String?
