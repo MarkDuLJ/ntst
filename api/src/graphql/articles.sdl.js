@@ -11,6 +11,7 @@ export const schema = gql`
   type Query {
     articles: [Article!]!
     article(id: Int!): Article
+    searchArticle(tag: String!): [Article]
   }
 
   input CreateArticleInput {
