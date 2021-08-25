@@ -19,9 +19,11 @@ const Products = ({ products }) => {
   const categories = [...grouped.keys()]
   return (
     <>
-      {categories.map((cat,i) => (
+      {categories.map((cat, i) => (
         <div key={i}>
-          <h2>{cat}</h2>
+          <h2 className="p-9 text-center text-2xl text-ntst-blue underline font-bold">
+            {cat}
+          </h2>
 
           <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-10">
             {grouped.get(cat).map((product) => (

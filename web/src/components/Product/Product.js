@@ -34,20 +34,18 @@ const Product = ({ product }) => {
     <div className="flex flex-col rounded-md shadow-md lg:mb-16">
       <div className="p-6 flex flex-col items-center">
         <Link to={routes.productdetail({ id: product.id })}>
-          <h2 className="mb-4">{name}</h2>
+          <h2 className="mb-4 text-center font-semibold">{name}</h2>
 
-          <img src={imgUrl} alt={tag} className="w-full h-28 object-cover" />
+          <img src={imgUrl} alt={tag} className=" w-80 h-40 object-cover" />
         </Link>
-        <p className="text-center my-4">${price}</p>
+        <p className="text-center my-4 font-semibold">${price}</p>
 
         <button onClick={() => setExtenddesc(!extenddesc)}>
           {extenddesc ? description : truncate(description)}
         </button>
 
-        <div className="w-full p-3 flex flex-row justify-between items-stretch">
-          <div>
-            {tag && tag.split(/,\s*/).map((tag, i) => <p key={i}>#{tag}</p>)}
-          </div>
+        <div className="w-full p-3 flex flex-row flex-wrap justify-between items-stretch">
+          {tag && tag.split(/,\s*/).map((tag, i) => <p key={i}>#{tag}</p>)}
         </div>
 
         <button
