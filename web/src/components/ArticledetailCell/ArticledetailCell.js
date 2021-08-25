@@ -1,12 +1,13 @@
-import Article from 'src/components/Admin/Article/Article'
+import Article from 'src/components/Article'
 
 export const QUERY = gql`
-  query FindArticleById($id: Int!) {
+  query FindArticledetailQuery($id: Int!) {
     article: article(id: $id) {
       id
       title
       description
       author
+
       tag
       createAt
     }
@@ -15,7 +16,7 @@ export const QUERY = gql`
 
 export const Loading = () => <div>Loading...</div>
 
-export const Empty = () => <div>Article not found</div>
+export const Empty = () => <div>Empty</div>
 
 export const Failure = ({ error }) => (
   <div style={{ color: 'red' }}>Error: {error.message}</div>

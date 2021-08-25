@@ -2,16 +2,7 @@ import { Link, routes } from '@redwoodjs/router'
 
 import { useState, useEffect } from 'react'
 import { useCart } from 'src/components/Cart'
-
-const MAX_STRING_LENGTH = 20
-
-const truncate = (text) => {
-  let output = text
-  if (text.length > MAX_STRING_LENGTH) {
-    output = output.substring(0, MAX_STRING_LENGTH) + '...'
-  }
-  return output
-}
+import { truncate } from 'src/utils'
 
 const Product = ({ product }) => {
   const { name, description, imgUrl, price, tag } = product
@@ -39,13 +30,18 @@ const Product = ({ product }) => {
           {name}
         </h2>
 
-        <img src={imgUrl} alt={tag} className="w-full h-28 object-cover" />
-</Link>
+          <img src={imgUrl} alt={tag} className="w-full h-28 object-cover" />
+        </Link>
         <p className="text-center my-4">${price}</p>
 
+<<<<<<< HEAD
 
         <button onClick={()=>setExtenddesc(!extenddesc)}>
         {extenddesc?description:truncate(description)}
+=======
+        <button onClick={() => setExtenddesc(!extenddesc)}>
+          {extenddesc ? description : truncate(description, 20)}
+>>>>>>> Mark
         </button>
 
         <div className="w-full p-3 flex flex-row justify-between items-stretch">
