@@ -26,6 +26,7 @@ export const product = ({ id }) => {
 }
 
 export const createProduct = ({ input }) => {
+  requireAuth()
   return db.product.create({
     data: input,
   })
