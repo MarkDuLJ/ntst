@@ -1,4 +1,4 @@
-import Product from 'src/components/product'
+import ProductCard from 'src/components/ProductCard'
 
 const groupBy = (list, keyGetter) => {
   const map = new Map()
@@ -19,13 +19,13 @@ const Products = ({ products }) => {
   const categories = [...grouped.keys()]
   return (
     <>
-      {categories.map((cat,i) => (
+      {categories.map((cat, i) => (
         <div key={i}>
           <h2>{cat}</h2>
 
           <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-10">
             {grouped.get(cat).map((product) => (
-              <Product product={product} key={product.id} />
+              <ProductCard product={product} key={product.id} />
             ))}
           </div>
         </div>
