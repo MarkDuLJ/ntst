@@ -16,7 +16,7 @@ export const CartItem = ({ item }) => {
     <div className="flex flex-row justify-between items-center gap-16">
       <CartProduct product={item} />
 
-      <div className="ml-7">
+      <div className="ml-7 mb-6">
         Quantity:
         <input
           name="qty"
@@ -30,7 +30,7 @@ export const CartItem = ({ item }) => {
 
       <button
         onClick={() => deleteItem({ id: item.id })}
-        className="bg-ntst-purple text-ntst-white h-14 font-semibold p-2 rounded-md hover:bg-ntst-white hover:text-ntst-blue"
+        className="mb-6 bg-ntst-purple text-ntst-white h-14 font-semibold p-2 rounded-md hover:bg-ntst-white hover:text-ntst-blue"
       >
         Remove
       </button>
