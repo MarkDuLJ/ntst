@@ -4,7 +4,7 @@ import { useCart } from 'src/components/Cart'
 const BlogLayout = ({ children }) => {
   const { cart } = useCart()
   const { logIn, isAuthenticated, logOut, currentUser } = useAuth()
-  // console.log(currentUser)
+  console.log(currentUser)
   return (
     <>
       <header>
@@ -62,6 +62,7 @@ const BlogLayout = ({ children }) => {
             {/* <div className="inline-block text-sm font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent">
               <Navigation />
             </div> */}
+<<<<<<< HEAD
 
             <div className="inline-block leading-none text-ntst-blue mt-2">
               <div className="flex flex-col gap-1 justify-center items-center">
@@ -78,6 +79,19 @@ const BlogLayout = ({ children }) => {
                   </p>
                 )}
               </div>
+=======
+            <div className="inline-block text-sm font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent">
+              <a href="#" onClick={isAuthenticated ? logOut : logIn}>
+                {isAuthenticated ? 'Log Out' : 'Log In'}
+              </a>
+              {isAuthenticated && (
+                <p className="text-blue-200">
+                  {currentUser.user_metadata.full_name
+                    ? currentUser.user_metadata.full_name
+                    : currentUser.email}
+                </p>
+              )}
+>>>>>>> Mark
             </div>
           </div>
         </nav>
