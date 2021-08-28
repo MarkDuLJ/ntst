@@ -24,7 +24,9 @@ export const Success = ({ searchProducts }) => {
       {searchProducts.map((product) => (
         <div
           key={product.id}
+
           className=" px-9 py-4 w-1/6 flex flex-col items-center justify-center shadow-md border"
+
         >
           <Link
             to={routes.productdetail({ id: product.id })}
@@ -36,7 +38,9 @@ export const Success = ({ searchProducts }) => {
             <img
               src={product.imgUrl}
               alt={product.name}
+
               className=" w-24 h-24 rounded object-cover "
+
             />
           </Link>
         </div>
