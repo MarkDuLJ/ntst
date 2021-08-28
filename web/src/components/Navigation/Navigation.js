@@ -11,6 +11,7 @@ const Navigation = () => {
         <SignoutBtn />
       ) : (
         <>
+
           <div className="flex flex-row items-center justify-center">
             <Link to={routes.signup()} className="text-sm">
               <div className="p-4 text-blue-400 hover:bg-ntst-blue hover:text-ntst-white cursor-pointer text-center">
@@ -23,6 +24,7 @@ const Navigation = () => {
                 Sign In
               </div>
             </Link>
+
           </div>
         </>
       )}
