@@ -6,8 +6,8 @@ import SearchtagCell from 'src/components/SearchtagCell'
 const ArticlePage = () => {
   const [search, setSearch] = useState('')
   const onSubmit = ({ search }) => {
-    console.log(search)
-    setSearch(search)
+    let a = search.toLowerCase()
+    setSearch(a)
   }
 
   return (
@@ -18,7 +18,7 @@ const ArticlePage = () => {
             className="text-xl w-96 p-3 text-center border-2 shadow-md "
             name="search"
             placeholder="Input tags, only letters allowed"
-            validation={{ required: true, patter: { value: /[a-zA-Z]/ } }}
+            validation={{ required: true, pattern: { value: /[a-zA-Z]/ } }}
           />
           <Submit className="p-3 bg-ntst-blue text-center text-ntst-white ml-3 rounded hover:bg-ntst-white hover:text-ntst-blue">
             Search

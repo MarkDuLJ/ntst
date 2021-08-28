@@ -1,8 +1,10 @@
 import { Link, routes } from '@redwoodjs/router'
+import { useAuth } from '@redwoodjs/auth'
 import { useCart } from 'src/components/Cart'
-import Navigation from 'src/components/Navigation'
 const BlogLayout = ({ children }) => {
   const { cart } = useCart()
+  const { logIn, isAuthenticated, logOut, currentUser } = useAuth()
+  // console.log(currentUser)
   return (
     <>
       <header>
@@ -57,8 +59,18 @@ const BlogLayout = ({ children }) => {
               </span>
             </Link>
             {/* Login */}
-            <div className="inline-block text-sm font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent">
+            {/* <div className="inline-block text-sm font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent">
               <Navigation />
+            </div> */}
+            <div className="inline-block text-sm font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent">
+              <a href="#" onClick={isAuthenticated ? logOut : logIn}>
+                {isAuthenticated ? 'Log Out' : 'Log In'}
+              </a>
+              {isAuthenticated && (
+                <p className="text-blue-200">
+                  {currentUser.name ? currentUser.name : currentUser.email}
+                </p>
+              )}
             </div>
           </div>
         </nav>

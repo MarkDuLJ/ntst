@@ -2547,10 +2547,10 @@
   resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.35.2.tgz#2b97dc4ddfb5b55ba6c5bebf9c5aadd7e7beea11"
   integrity sha512-4GBA6w+/r6/5ovbXLPlTFSG+43XvNBKG/o2Pxx5AY6A+5lg17uv/qA8HWy2YkJxpCpnZZqUhXH6oRngsb9B31g==
 
-"@redwoodjs/auth@^0.36.1":
-  version "0.36.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.36.1.tgz#9af79f83810899c851629c22c7e59db3544a2a8e"
-  integrity sha512-cuBRgipT2gpj15nutZYPTVUTt18NY4LBl3FO2NKyxCab74HDsWsvbjcUKc71oIMcps/t4/H33swRc/e+GA4VzA==
+"@redwoodjs/auth@^0.36.2":
+  version "0.36.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.36.2.tgz#86fc2611a50fff8929f9d5c2a5ed5f7c54b5e8c7"
+  integrity sha512-iXjclf3C09+3CUsbyVpYBY96wboqOjzcvoAt4WbidUGh80W9mRLKYw1cDvaodRnWuQjB14A/33KOuqUtKVw8zw==
 
 "@redwoodjs/cli@0.35.2":
   version "0.35.2"
