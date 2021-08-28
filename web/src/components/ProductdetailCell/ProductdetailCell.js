@@ -1,4 +1,4 @@
-import ProductCard from 'src/components/ProductCard'
+import ProductDetailCard from 'src/components/ProductDetailCard'
 
 export const QUERY = gql`
   query FindProductdetailQuery($id: Int!) {
@@ -25,7 +25,7 @@ export const Failure = ({ error }) => (
 export const Success = ({ product }) => {
   return (
     <div>
-      <ProductCard product={product} />
+      <ProductDetailCard product={product} />
     </div>
   )
 }

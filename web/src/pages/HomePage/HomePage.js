@@ -84,12 +84,12 @@ const HomePage = () => {
                 There are invasive and non-invasive ventilator for business and
                 home uses in NTST.
               </p>
-              <button
+              {/* <button
                 type="button"
                 className="btn btn-purple hover:bg-ntst-white hover:text-black"
               >
                 More info
-              </button>
+              </button> */}
             </div>
           </div>
           {/* Rounded rectangle  */}
@@ -116,12 +116,12 @@ const HomePage = () => {
                 NTST’s health data monitoring system would monitor patients’
                 health data through wearable wireless device.
               </p>
-              <button
+              {/* <button
                 type="button"
                 className="btn btn-purple hover:bg-ntst-white hover:text-black"
               >
                 More info
-              </button>
+              </button> */}
             </div>
           </div>
           {/* Rounded rectangle  */}
@@ -146,12 +146,12 @@ const HomePage = () => {
                 The dietary supplements offer vitamins, minerals, proteins, etc.
                 that people’s body may need.
               </p>
-              <button
+              {/* <button
                 type="button"
                 className="btn btn-purple hover:bg-ntst-white hover:text-black"
               >
                 More info
-              </button>
+              </button> */}
             </div>
           </div>
           {/* Rounded rectangle  */}

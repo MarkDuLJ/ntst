@@ -20,18 +20,30 @@ export const Failure = ({ error }) => (
 
 export const Success = ({ searchProducts }) => {
   return (
-    <div>
+    <div className="flex justify-center gap-3 flex-wrap">
       {searchProducts.map((product) => (
-        <h4 key={product.id}>
-          <Link to={routes.productdetail({ id: product.id })}>
+        <div
+          key={product.id}
+
+          className=" px-9 py-4 w-1/6 flex flex-col items-center justify-center shadow-md border"
+
+        >
+          <Link
+            to={routes.productdetail({ id: product.id })}
+            className="p-2 mb-2 hover:bg-ntst-blue hover:text-ntst-white"
+          >
             {product.name}
+          </Link>
+          <Link to={routes.productdetail({ id: product.id })}>
             <img
               src={product.imgUrl}
               alt={product.name}
-              className="w-12 h-12 object-cover"
+
+              className=" w-24 h-24 rounded object-cover "
+
             />
           </Link>
-        </h4>
+        </div>
       ))}
     </div>
   )
