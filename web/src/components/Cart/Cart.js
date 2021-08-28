@@ -7,9 +7,14 @@ export const Cart = () => {
 
   if (!cart.cartItems.length) {
     return (
-      <p>
+      <p className="mb-14">
         Your cart is empty.{' '}
-        <Link to={routes.product()}>Continue shopping.</Link>
+        <Link
+          to={routes.product()}
+          className="border p-2 bg-ntst-white text-ntst-blue font-semibold hover:text-ntst-white hover:bg-ntst-purple"
+        >
+          Continue shopping.
+        </Link>
       </p>
     )
   }

@@ -4,7 +4,7 @@ const CartPage = () => {
   return (
     <>
       <div className="container">
-        <h1 className="text-ntst-blue text-2xl my-10 font-bold">Check out</h1>
+        <h1 className="text-ntst-blue text-2xl my-14 font-bold">Check out</h1>
         <Cart />
       </div>
     </>
