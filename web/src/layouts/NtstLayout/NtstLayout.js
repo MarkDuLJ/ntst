@@ -49,7 +49,7 @@ const BlogLayout = ({ children }) => {
               href="#"
               className="block cursor-pointer px-4 py-2"
             >
-              <i className="text-xl text-ntst-ntst-blue hover:text-ntst-purple fas fa-shopping-cart"></i>
+              <i className="text-xl text-ntst-ntst-blue hover:text-ntst-purple fas fa-shopping-cart p-2"></i>
               <span className="bg-gray-100 text-ntst-blue font-semibold ml-1">
                 {cart.cartItems.length > 0
                   ? cart.cartItems.reduce((a, c) => a + c.qty, 0)
@@ -57,7 +57,7 @@ const BlogLayout = ({ children }) => {
               </span>
             </Link>
             {/* Login */}
-            <div className="inline-block text-sm px-4 py-2 font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0">
+            <div className="inline-block text-sm font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent">
               <Navigation />
             </div>
           </div>

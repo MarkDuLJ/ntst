@@ -37,6 +37,7 @@ const Routes = () => {
       <Set wrap={NtstLayout}>
         <Route path="/signin" page={SigninPage} name="signin" />
         <Route path="/signup" page={SignupPage} name="signup" />
+        <Route path="/event-detail/{id:Int}" page={EventDetailPage} name="eventDetail" />
         <Route path="/articledetail/{id:Int}" page={ArticledetailPage} name="articledetail" />
         <Route path="/productdetail/{id:Int}" page={ProductdetailPage} name="productdetail" />
         <Route path="/article" page={ArticlePage} name="article" />
