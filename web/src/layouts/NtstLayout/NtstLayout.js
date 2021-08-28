@@ -62,17 +62,24 @@ const BlogLayout = ({ children }) => {
             {/* <div className="inline-block text-sm font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent">
               <Navigation />
             </div> */}
-            <div className="inline-block text-sm font-semibold leading-none border rounded text-ntst-blue border-white hover:border-transparent">
-              <a href="#" onClick={isAuthenticated ? logOut : logIn}>
-                {isAuthenticated ? 'Log Out' : 'Log In'}
-              </a>
-              {isAuthenticated && (
-                <p className="text-blue-200">
-                  {currentUser.user_metadata.full_name
-                    ? currentUser.user_metadata.full_name
-                    : currentUser.email}
-                </p>
-              )}
+
+
+            <div className="inline-block leading-none text-ntst-blue mt-2">
+              <div className="flex flex-col gap-1 justify-center items-center">
+                <button
+                  href="#"
+                  onClick={isAuthenticated ? logOut : logIn}
+                  className="p-3 border rounded font-semibold bg-ntst-blue text-ntst-white hover:bg-ntst-white hover:text-ntst-blue"
+                >
+                  {isAuthenticated ? 'Log Out' : 'Log In'}
+                </button>
+                {isAuthenticated && (
+                  <p className="text-blue-500 text-sm">
+                    {currentUser.name ? currentUser.name : currentUser.email}
+                  </p>
+                )}
+              </div>
+
             </div>
           </div>
         </nav>
