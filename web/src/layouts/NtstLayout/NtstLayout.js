@@ -4,7 +4,7 @@ import { useCart } from 'src/components/Cart'
 const BlogLayout = ({ children }) => {
   const { cart } = useCart()
   const { logIn, isAuthenticated, logOut, currentUser } = useAuth()
-  // console.log(currentUser)
+  console.log(currentUser)
   return (
     <>
       <header>
@@ -68,7 +68,9 @@ const BlogLayout = ({ children }) => {
               </a>
               {isAuthenticated && (
                 <p className="text-blue-200">
-                  {currentUser.name ? currentUser.name : currentUser.email}
+                  {currentUser.user_metadata.full_name
+                    ? currentUser.user_metadata.full_name
+                    : currentUser.email}
                 </p>
               )}
             </div>
