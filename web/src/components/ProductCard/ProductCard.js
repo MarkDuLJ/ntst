@@ -26,10 +26,18 @@ const ProductCard = ({ product }) => {
       <div className="p-6 flex flex-col items-center">
         <Link to={routes.productdetail({ id: product.id })}>
 
-          <h2 className="mb-4 text-center font-semibold">{name}</h2>
+          <h2 className="mb-4 text-xl text-center font-semibold p-4 border border-ntst-white hover:bg-ntst-blue hover:text-ntst-white">
+            {name}
+          </h2>
 
-          <img src={imgUrl} alt={tag} className="w-80 h-40 object-cover" />
+          <img
+            src={imgUrl}
+            alt={tag}
+            className="w-80 h-40 object-cover rounded-md"
+          />
 
+
+       
         </Link>
         <p className="text-center my-4 font-semibold">${price}</p>
 
