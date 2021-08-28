@@ -4,7 +4,7 @@ import { useCart } from 'src/components/Cart'
 const BlogLayout = ({ children }) => {
   const { cart } = useCart()
   const { logIn, isAuthenticated, logOut, currentUser } = useAuth()
-  console.log(currentUser)
+  // console.log(currentUser)
   return (
     <>
       <header>

@@ -6,8 +6,8 @@ import SearchtagCell from 'src/components/SearchtagCell'
 const ArticlePage = () => {
   const [search, setSearch] = useState('')
   const onSubmit = ({ search }) => {
-    console.log(search)
-    setSearch(search.toLowerCase())
+    let a = search.toLowerCase()
+    setSearch(a)
   }
 
   return (
