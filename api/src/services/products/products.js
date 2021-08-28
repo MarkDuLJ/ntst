@@ -39,6 +39,7 @@ export const updateProduct = ({ id, input }) => {
 }
 
 export const deleteProduct = ({ id }) => {
+  requireAuth()
   return db.product.delete({
     where: { id },
   })
