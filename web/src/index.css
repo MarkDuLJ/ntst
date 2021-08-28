@@ -63,3 +63,12 @@ input.error, textarea.error {
 ::-webkit-scrollbar-thumb:hover {
   background: #003d99;
 }
+
+/* Tooltip */
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50
+}

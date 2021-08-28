@@ -1,14 +1,12 @@
-import ArticleDeatilCard from 'src/components/ArticleDetailCard'
+import EventDetailCard from 'src/components/EventDetailCard'
 
 export const QUERY = gql`
-  query FindArticledetailQuery($id: Int!) {
-    article: article(id: $id) {
+  query FindEventDetailQuery($id: Int!) {
+    event: event(id: $id) {
       id
       title
       description
-      author
-
-      tag
+      imgUrl
       createAt
     }
   }
@@ -22,6 +20,6 @@ export const Failure = ({ error }) => (
   <div style={{ color: 'red' }}>Error: {error.message}</div>
 )
 
-export const Success = ({ article }) => {
-  return <ArticleDeatilCard article={article} />
+export const Success = ({ event }) => {
+  return <EventDetailCard event={event}></EventDetailCard>
 }

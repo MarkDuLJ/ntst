@@ -6,16 +6,27 @@ import SignoutBtn from 'src/components/SignoutBtn'
 const Navigation = () => {
   const { isAuthenticated } = useAuth()
   return (
-    <nav>
+    <div>
       {isAuthenticated ? (
         <SignoutBtn />
       ) : (
         <>
-          <Link to={routes.signup()}>Sing Up</Link>
-          <Link to={routes.signin()}>Sign In</Link>
+          <div className="flex flex-row">
+            <div className="p-4 hover:bg-ntst-blue hover:text-ntst-white cursor-pointer">
+              <Link to={routes.signin()} className="text-lg">
+                Sign In
+              </Link>
+            </div>
+
+            <div className="p-4 hover:bg-ntst-blue hover:text-ntst-white cursor-pointer">
+              <Link to={routes.signup()} className="text-lg">
+                Sign Up
+              </Link>
+            </div>
+          </div>
         </>
       )}
-    </nav>
+    </div>
   )
 }
 
